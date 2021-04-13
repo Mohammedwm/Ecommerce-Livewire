@@ -52,9 +52,9 @@
                             </div>
                             <div class="form-group row">
                                 <label class="col-md-4 control-label">Expiry Date</label>
-                                <div wire:ignore class="col-md-4" >
-                                    <input type="text" id="expiry-date" class="form-control input-md" placeholder="Expiry Date" wire:model="exriry_date">
-                                    @error('exriry_date') <p class="text-danger">{{$message}}</p> @enderror
+                                <div class="col-md-4" wire:ignore>
+                                    <input type="text" id="expiry-date" class="form-control input-md" placeholder="Expiry Date" wire:model="expiry_date">
+                                    @error('expiry_date') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -77,7 +77,7 @@
                 format: 'Y-MM-DD'
             }).on('dp.change',function (ev) {
                 var data = $('#expiry-date').val();
-                @this.set('exriry_date',data);
+                @this.set('expiry_date',data);
             });
         });
     </script>
