@@ -5,10 +5,11 @@
         <div class="wrap-breadcrumb">
             <ul>
                 <li class="item-link"><a href="#" class="link">home</a></li>
-                <li class="item-link"><span>login</span></li>
+                <li class="item-link"><span>cart</span></li>
             </ul>
         </div>
         <div class=" main-content-area">
+            @if (Cart::instance('cart')->count() > 0)
             <div class="wrap-iten-in-cart">
             @if (Session::has('success_message'))
                 <div class="alert alert-success">
@@ -64,7 +65,6 @@
                         <p class="summary-info"><span class="title">Shipping</span><b class="index">Free Shipping</b></p>
                         <p class="summary-info total-info "><span class="title">Total</span><b class="index">${{Cart::instance('cart')->total()}}</b></p>
                     @endif
-
                 </div>
 
                 <div class="checkout-info">
@@ -88,7 +88,7 @@
                         </div>
                     @endif
                     @endif
-                    <a class="btn btn-checkout" href="checkout.html">Check out</a>
+                    <a class="btn btn-checkout" href="" wire:click.prevent="checkout">Check out</a>
                     <a class="link-to-shop" href="shop.html">Continue Shopping<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                 </div>
 
@@ -97,7 +97,13 @@
                     <a class="btn btn-update" href="#">Update Shopping Cart</a>
                 </div>
             </div>
-
+            @else
+                <div class="text-center" style="padding:30px 0;">
+                    <h1> Your cart is empty! </h1>
+                    <p> Add items to it now </p>
+                    <a href="/shop" class="btn btn-success">Shop Now</a>
+                </div>
+            @endif
 
             <div class="wrap-iten-in-cart">
                 <h3 class="box-title" style="border-bottom : 1px solid;padding-bottom: 15px;">{{Cart::instance('saveForLater')->count()}} item(s) Save For Later</h3>
