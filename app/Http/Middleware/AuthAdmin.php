@@ -18,7 +18,7 @@ class AuthAdmin
     {
         if(session('utype') === 'ADM')
         {
-            return $next($request); 
+            return $next($request);
         }else{
             session()->flush();
             return redirect()->route('login');
