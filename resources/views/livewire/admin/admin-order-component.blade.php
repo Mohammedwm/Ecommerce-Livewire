@@ -30,6 +30,7 @@
                                     <td>Zipcode</td>
                                     <td>Status</td>
                                     <td>Order Date</td>
+                                    <td>Action</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -47,6 +48,7 @@
                                         <td>{{$order->zipcode}}</td>
                                         <td>{{$order->status}}</td>
                                         <td>{{$order->created_at}}</td>
+                                        <td><a href="{{ route('admin.orderdetails', ['order_id'=>$order->id]) }}" class="btn btn-info btn-sm">Details</td>
                                     </tr>
                                 @endforeach
                             </tbody>
