@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5537b0e7517872e440c92203413b6149",
+    "content-hash": "60b0004e70b3a92868fed3c4a669e69b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1082,16 +1082,16 @@
         },
         {
             "name": "hardevine/shoppingcart",
-            "version": "2.9",
+            "version": "3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hardevine/LaravelShoppingcart.git",
-                "reference": "2fc6eff895ae6d94978125f6bc65aceadc4873c5"
+                "reference": "8dea942f3c61ed450fe7dfee968dc9943fa649f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hardevine/LaravelShoppingcart/zipball/2fc6eff895ae6d94978125f6bc65aceadc4873c5",
-                "reference": "2fc6eff895ae6d94978125f6bc65aceadc4873c5",
+                "url": "https://api.github.com/repos/hardevine/LaravelShoppingcart/zipball/8dea942f3c61ed450fe7dfee968dc9943fa649f8",
+                "reference": "8dea942f3c61ed450fe7dfee968dc9943fa649f8",
                 "shasum": ""
             },
             "require": {
@@ -1139,9 +1139,10 @@
                 "shoppingcart"
             ],
             "support": {
-                "source": "https://github.com/hardevine/LaravelShoppingcart/tree/2.9"
+                "issues": "https://github.com/hardevine/LaravelShoppingcart/issues",
+                "source": "https://github.com/hardevine/LaravelShoppingcart/tree/3.0"
             },
-            "time": "2020-09-06T07:46:29+00:00"
+            "time": "2021-05-26T08:26:01+00:00"
         },
         {
             "name": "jaybizzle/crawler-detect",
@@ -8206,5 +8207,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
