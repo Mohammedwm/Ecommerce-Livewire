@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/favicon.ico')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/favicon1.ico')}}">
 
 	{{-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet"> --}}
@@ -17,7 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/chosen.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/flexslider.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/color-01.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/color-02.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap-datetimepicker.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/nouislider.min.css')}}">
 
@@ -39,13 +39,13 @@
 			<div class="row">
 				<div class="topbar-menu-area">
 					<div class="container">
-						<div class="topbar-menu left-menu">
+						{{-- <div class="topbar-menu left-menu">
 							<ul>
 								<li class="menu-item" >
 									<a title="Hotline: (+123) 456 789" href="#" ><span class="icon label-before fa fa-mobile"></span>Hotline: (+123) 456 789</a>
 								</li>
 							</ul>
-						</div>
+						</div> --}}
 						<div class="topbar-menu right-menu">
 							<ul>
 
@@ -143,7 +143,7 @@
 					<div class="mid-section main-info-area">
 
 						<div class="wrap-logo-top left-section">
-							<a href="index.html" class="link-to-home"><img src="{{ asset('assets/images/logo-top-1.png') }}" alt="mercado"></a>
+							<a href="{{route('home')}}" class="link-to-home"><img src="{{ asset('assets/images/logo-top-3.png') }}" alt="mercado"></a>
 						</div>
 
                         @livewire('header-search-component')
@@ -166,7 +166,7 @@
 				</div>
 
 				<div class="nav-section header-sticky">
-					<div class="header-nav-section">
+					{{-- <div class="header-nav-section">
 						<div class="container">
 							<ul class="nav menu-nav clone-main-menu" id="mercado_haead_menu" data-menuname="Sale Info" >
 								<li class="menu-item"><a href="#" class="link-term">Weekly Featured</a><span class="nav-label hot-label">hot</span></li>
@@ -176,7 +176,7 @@
 								<li class="menu-item"><a href="#" class="link-term">Top rated items</a><span class="nav-label hot-label">hot</span></li>
 							</ul>
 						</div>
-					</div>
+					</div> --}}
 
 					<div class="primary-nav-section">
 						<div class="container">

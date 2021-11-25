@@ -47,7 +47,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
-Route::get('/',HomeComponent::class);
+Route::get('/',HomeComponent::class)->name('home');
 
 Route::get('/shop',ShopComponent::class);
 

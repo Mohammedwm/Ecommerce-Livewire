@@ -1,7 +1,7 @@
 <main id="main">
 		<div class="container">
 			<!--MAIN SLIDE-->
-			<div class="wrap-main-slide">
+			{{-- <div class="wrap-main-slide">
 				<div class="slide-carousel owl-carousel style-nav-1" data-items="1" data-loop="1" data-nav="true" data-dots="false">
                     @foreach ($sliders as $slider)
                         <div class="item-slide">
@@ -15,7 +15,7 @@
                         </div>
                     @endforeach
 				</div>
-			</div>
+			</div> --}}
 			<!--BANNER-->
 			<div class="wrap-banner style-twin-default">
 				<div class="banner-item">
@@ -59,11 +59,11 @@
 			<!--Latest Products-->
 			<div class="wrap-show-advance-info-box style-1">
 				<h3 class="title-box">Latest Products</h3>
-				<div class="wrap-top-banner">
-					<a href="#" class="link-banner banner-effect-2">
-						<figure><img src="{{ asset('assets/images/digital-electronic-banner.jpg') }}" width="1170" height="240" alt=""></figure>
-					</a>
-				</div>
+                    {{-- <div class="wrap-top-banner">
+                        <a href="#" class="link-banner banner-effect-2">
+                            <figure><img src="{{ asset('assets/images/digital-electronic-banner.jpg') }}" width="1170" height="240" alt=""></figure>
+                        </a>
+                    </div> --}}
 				<div class="wrap-products">
 					<div class="wrap-product-tab tab-style-1">
 						<div class="tab-contents">
@@ -92,11 +92,11 @@
 			<!--Product Categories-->
 			<div class="wrap-show-advance-info-box style-1">
 				<h3 class="title-box">Product Categories</h3>
-				<div class="wrap-top-banner">
+				{{-- <div class="wrap-top-banner">
 					<a href="#" class="link-banner banner-effect-2">
 						<figure><img src="{{ asset('assets/images/fashion-accesories-banner.jpg') }}" width="1170" height="240" alt=""></figure>
 					</a>
-				</div>
+				</div> --}}
 				<div class="wrap-products">
 					<div class="wrap-product-tab tab-style-1">
 						<div class="tab-control">
