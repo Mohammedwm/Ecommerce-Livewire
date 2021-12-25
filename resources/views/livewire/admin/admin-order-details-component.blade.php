@@ -39,14 +39,7 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-md-6">
-                                Ordered Items
-                            </div>
-                            <div class="col-md-6">
-                                <a href="{{ route('admin.orders') }}" class="btn btn-success pull-right">All Orders</a>
-                            </div>
-                        </div>
+                        Ordered Items
                     </div>
                     <div class="panel-body">
                         <div class="wrap-iten-in-cart">
